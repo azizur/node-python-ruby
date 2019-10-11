@@ -8,7 +8,7 @@ ARG NODE_VERSION=10
 
 # Update base image
 RUN apt-get update && apt-get -y upgrade;
-RUN apt-get install -y curl build-essential patch ruby-dev zlib1g-dev liblzma-dev;
+RUN apt-get install -y curl build-essential patch ruby-dev zlib1g-dev liblzma-dev git;
 
 RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash -
 
