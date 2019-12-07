@@ -3,8 +3,8 @@ FROM debian:buster-slim
 
 LABEL maintainer="https://hub.docker.com/u/azizur"
 
-# Node.js lts/dubnium
-ARG NODE_VERSION=10
+# Node.js lts/erbium
+ARG NODE_VERSION=12
 
 # Update base image
 RUN apt-get update && apt-get -y upgrade;
