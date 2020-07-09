@@ -18,6 +18,8 @@ RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash -
 
 # Install Python, Ruby and Node.JS packages
 RUN apt-get install -y \
+  autoconf \
+  automake \
   python3 \
   python3-pip \
   ruby-full \
