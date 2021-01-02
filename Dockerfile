@@ -33,3 +33,10 @@ RUN pip install awscli pipenv
 
 # Ruby bundler support
 RUN gem install bundler
+
+# create a new user: pipeline
+RUN useradd -ms /bin/bash pipeline
+
+# run docker container as: pipeline 
+USER pipeline
+WORKDIR /home/pipeline
