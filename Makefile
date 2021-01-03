@@ -8,5 +8,4 @@ build-no-cache:
 	docker build --no-cache --compress -t azizur:node-python-ruby .
 
 shell:
-	docker run --name node-python-ruby -it --rm azizur:node-python-ruby bash
-	docker run --volume ${PWD}:/app --name node-python-ruby -it --rm azizur:node-python-ruby bash
+	docker run --name node-python-ruby -it --rm azizur:node-python-ruby
