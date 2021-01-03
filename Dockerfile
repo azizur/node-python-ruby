@@ -64,4 +64,4 @@ RUN bash -c 'source $HOME/.nvm/nvm.sh   && \
 # Set WORKDIR to nvm directory
 WORKDIR /home/pipeline
 
-ENTRYPOINT ["/bin/bash"]
+# ENTRYPOINT ["/bin/bash"]
