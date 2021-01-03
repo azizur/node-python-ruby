@@ -59,8 +59,7 @@ RUN echo '[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion" # Th
 RUN bash -c 'source $HOME/.nvm/nvm.sh   && \
   nvm install ${NODE_VERSION}  && \
   nvm use ${NODE_VERSION} && \
-  nvm alias default ${NODE_VERSION} && \
-  npm install --prefix "$HOME/.nvm/"'
+  nvm alias default ${NODE_VERSION}'
 
 # Set WORKDIR to nvm directory
 WORKDIR /home/pipeline
