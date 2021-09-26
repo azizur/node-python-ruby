@@ -3,8 +3,8 @@ FROM debian:buster-slim
 
 LABEL maintainer="@azizur"
 
-# Node.js lts/erbium
-ARG NODE_VERSION=lts/erbium
+# Node.js lts/fermium
+ARG NODE_VERSION=lts/fermium
 
 # Update base image
 RUN apt-get update && apt-get -y upgrade;
@@ -48,7 +48,7 @@ USER pipeline
 RUN git config --global user.name "pipeline docker" && \
   git config --global user.email "pipeline@docker.container"
 
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 # nvm
 RUN echo 'export NVM_DIR="$HOME/.nvm"'                                       >> "$HOME/.bashrc"
