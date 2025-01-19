@@ -1,10 +1,10 @@
-# Base image: Debian 10
-FROM debian:buster-slim
+# Base image: Debian stable
+FROM debian:stable-slim
 
 LABEL maintainer="@azizur"
 
-# Node.js lts/fermium
-ARG NODE_VERSION=lts/fermium
+# Node.js lts/*
+ARG NODE_VERSION=lts/*
 
 # Update base image
 RUN apt-get update && apt-get -y upgrade;
